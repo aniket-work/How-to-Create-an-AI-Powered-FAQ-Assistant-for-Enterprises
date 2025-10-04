@@ -1,0 +1,6 @@
+google-generativeai>=0.7.0
+streamlit
+pandas
+sqlalchemy
+python-dotenv
+prefect>=2.9

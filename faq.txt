@@ -1,0 +1,27 @@
+Frequently Asked Questions (FAQ)
+================================
+
+Q1: What is this project about?
+A1: This project is a simple demo that shows how to create and manage a FAQ section.
+
+Q2: How do I install the project?
+A2: Download the source code from the repository and follow the setup instructions in the README file.
+
+Q3: What technologies are used in this project?
+A3: The project uses Python, FastAPI for backend, and Streamlit for frontend.
+
+Q4: Can I contribute to this project?
+A4: Yes! Contributions are welcome. Please fork the repository and submit a pull request.
+
+Q5: Who maintains this project?
+A5: The project is maintained by the core developer team and open-source contributors.
+
+Q6: How do I report a bug?
+A6: You can open an issue in the repository’s Issues section with detailed steps to reproduce the bug.
+
+Q7: Is there any license for this project?
+A7: Yes, the project is licensed under the MIT License.
+
+Q8: Where can I get help if I’m stuck?
+A8: You can refer to the documentation or join our community forum for support.
+
