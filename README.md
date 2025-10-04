@@ -14,6 +14,7 @@ This platform provides an intelligent FAQ assistant that can answer employee or 
 - **Source Tracking**: See which documents informed each response
 - **Feedback Collection**: Rate the helpfulness of answers to improve the system
 - **Memory Management**: Context-aware conversations with session management
+- **Professional UI**: Enterprise-grade interface with modern design principles
 
 ## Tech Stack
 
@@ -40,13 +41,14 @@ This platform provides an intelligent FAQ assistant that can answer employee or 
    Create a `.env` file with your Groq API key:
    ```
    GROQ_API_KEY=your_groq_api_key_here
+   BACKEND_URL=http://localhost:8001
    ```
 
 ## Usage
 
 1. Start the backend server:
    ```bash
-   uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+   python start_backend.py
    ```
 
 2. In a new terminal, start the frontend:
@@ -54,12 +56,30 @@ This platform provides an intelligent FAQ assistant that can answer employee or 
    streamlit run app.py
    ```
 
-3. Access the application at `http://localhost:8501`
+3. Access the application at `http://localhost:8503`
+
+## Professional UI Features
+
+The application now features a sophisticated, enterprise-grade interface with:
+
+- **Professional Iconography**: SVG icon system replacing childish emojis
+- **Corporate Color Scheme**: Professional blues and grays for enterprise appearance
+- **Enhanced Typography**: Google Fonts (Inter and Roboto Slab) for improved readability
+- **Dashboard Layout**: Organized sidebar and main content area
+- **Card-Based Design**: Consistent card components with subtle shadows
+- **Professional Components**: Custom-styled buttons, inputs, and interactive elements
+- **Responsive Design**: Adapts to different screen sizes and devices
+- **Accessibility Features**: Proper contrast ratios and keyboard navigation
+
+For detailed information about the UI implementation, see:
+- [Professional UI Guide](professional_ui_guide.md)
+- [UI Transformation v2.0](ui_transformation_v2.md)
 
 ## API Endpoints
 
 - `POST /ingest/` - Upload and process documents
 - `POST /query/` - Ask questions about ingested documents
+- `POST /query_sse_memory/` - Ask questions with streaming responses
 - `POST /feedback/` - Provide feedback on answers
 - `POST /reset_memory/` - Clear conversation history
 
